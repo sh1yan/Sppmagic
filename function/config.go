@@ -7,7 +7,7 @@ import (
 )
 
 // 当前版本信息
-var Version = "1.0.1"
+var Version = "1.0.2"
 
 // logo
 var Slogan = `

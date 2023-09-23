@@ -25,7 +25,7 @@ func GetQuakeSocks5Data() {
 	res := postQuakeHttp(postdata, function.Quake_token, quake_timeout)
 	log.Debug(fmt.Sprint(res.Value()))
 	for i := range res.Get("data").Array() {
-		fmt.Println(res.Get("data").Array()[i].Get("ip"), ":", res.Get("data").Array()[i].Get("port"))
+		log.Verbose(fmt.Sprint(res.Get("data").Array()[i].Get("ip"), ":", res.Get("data").Array()[i].Get("port")))
 		ip_port := fmt.Sprintf("%v:%v", res.Get("data").Array()[i].Get("ip"), res.Get("data").Array()[i].Get("port"))
 		GETRES = append(GETRES, ip_port)
 	}
