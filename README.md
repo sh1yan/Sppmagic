@@ -34,7 +34,15 @@ quake采集模块：该模块为一次性API调用查询，把获取到socks5代
 
 ## 3. 使用说明
 
+下载安装编译：
+
+```go
+1、git clone https://github.com/sh1yan/Sppmagic.git
+2、go build -ldflags="-s -w " -trimpath main.go
+```
+
 常规用法：
+
 ``` go
 注：手动运行工具第一次后，会在工具同目录下生成一个 config.ini 文件，需要按照个人想法进行配置对应的参数信息
 
